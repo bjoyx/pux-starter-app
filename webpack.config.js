@@ -8,7 +8,8 @@ const entries = [path.join(__dirname, 'support/entry.js')]
 const plugins = [
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-  })
+  }),
+  new webpack.NamedModulesPlugin()
 ]
 
 if (isProd) {
@@ -75,5 +76,12 @@ module.exports = {
     cached: false,
     modules: false,
     chunkModules: false
+  },
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    host: '0.0.0.0',
+    contentBase: 'static',
+    historyApiFallback: true,
+    hotOnly: true
   }
 }
