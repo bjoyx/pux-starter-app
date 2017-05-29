@@ -2,7 +2,7 @@
   "name": "pux-starter-app",
   "version": "11.0.0",
   "description": "Pux starter app with hot-reloading and isomorphic rendering and routing.",
-  "main": "support/index.js",
+  "main": "support/entry.js",
   "keywords": [
     "pux",
     "purescript-pux",
