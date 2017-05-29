@@ -1,8 +1,12 @@
 node_modules/
 bower_components/
 output/
+generated-docs/
 dist/
 static/dist/
-.psci_modules
+.pulp-cache/
+.psc*
+.purs*
+.psa*
 npm-debug.log
 **DS_Store
